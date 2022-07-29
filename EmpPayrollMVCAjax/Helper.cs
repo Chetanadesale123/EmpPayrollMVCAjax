@@ -31,7 +31,6 @@ namespace EmpPayrollMVCAjax
                 return sw.GetStringBuilder().ToString();
             }
         }
-
         [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
         public class NoDirectAccessAttribute : ActionFilterAttribute
         {
@@ -44,6 +43,5 @@ namespace EmpPayrollMVCAjax
                 }
             }
         }
-
     }
 }

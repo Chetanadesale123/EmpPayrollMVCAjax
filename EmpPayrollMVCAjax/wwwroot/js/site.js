@@ -11,7 +11,6 @@ $(function () {
         $("#loaderbody").addClass('hide');
     });
 });
-
 showInPopup = (url, title) => {
     $.ajax({
         type: 'GET',
@@ -27,7 +26,6 @@ showInPopup = (url, title) => {
         }
     })
 }
-
 jQueryAjaxPost = form => {
     try {
         $.ajax({
@@ -56,7 +54,6 @@ jQueryAjaxPost = form => {
         console.log(ex)
     }
 }
-
 jQueryAjaxDelete = form => {
     if (confirm('Are you sure to delete this record ?')) {
         try {
@@ -77,7 +74,6 @@ jQueryAjaxDelete = form => {
             console.log(ex)
         }
     }
-
     //prevent default form submit event
     return false;
 }
